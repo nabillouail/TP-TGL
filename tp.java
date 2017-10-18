@@ -14,7 +14,7 @@ public class VectorHelper {
 	 
 			do {
 				// hypothèse : le tableau est trié
-				permut = false;
+				//permut = false;
 				for (int i = 0; i < longueur - 1; i++) {
 					// Teste si 2 éléments successifs sont dans le bon ordre ou non
 					if (tableau[i] > tableau[i + 1]) {

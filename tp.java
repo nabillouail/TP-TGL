@@ -51,3 +51,40 @@ public int[] sommer(int [] tab1,int[] tab2){
 	         VectorH=tableau;
 	 }
 }
+ public int [] minmax(int []VectorH) {
+	int [] resulte=new int[2];
+	resulte[0]=VectorH[0];
+	resulte[1]=VectorH[0];
+	 for (int i:VectorH)
+       {
+		 if (i>resulte[1]) resulte[1] = i;
+		 if (i<resulte[0]) resulte[0] = i;
+	   }
+	 return resulte;
+  }
+	 
+	 public int [] puissance(int [] VectorH,int x){
+		 if (x==0){
+			 for( int i=0;i<VectorH.length;i++)
+				 VectorH[i]=1;
+		return VectorH;
+		 }
+		 else
+		 if( x==1)return VectorH;
+		 else
+		 {
+			 int[]Vectorsup=new int[VectorH.length];
+			 for(int i=0;i<VectorH.length;i++)
+			        Vectorsup[i]=VectorH[i];	
+			        
+			 for(int index=1;index<x;index++)
+			 {			 
+				 for(int i=0;i<VectorH.length;i++)
+				 Vectorsup[i]*=VectorH[i];
+			 } 
+			 VectorH=Vectorsup;
+			 return VectorH;
+		 }
+
+}
+}

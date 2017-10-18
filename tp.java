@@ -34,7 +34,7 @@ public int[] sommer(int [] tab1,int[] tab2){
 		       throw new IllegalArgumentException("la taille de deux tableaux est différentes"); 
 		 int[] tab3=new int[tab1.length];
 		 for(int i=0;i<tab3.length;i++)
-	          tab3[i]=tab1[i]+tab2[i];
+	          tab1[i]=tab3[i]+tab2[i];
 	          VectorH=tab3;
 		 return VectorH;
 	 }

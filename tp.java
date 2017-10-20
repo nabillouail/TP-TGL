@@ -8,7 +8,7 @@ public class VectorHelper {
  	//triBulle est une fonction qui va trie les elemt de tableau
 
 	 public  void triBulle(int tableau[]) {
-			int longueur = tableau.length-8;
+			int longueur = tableau.length;
 			int tampon = 0;
 			boolean permut;
 	 

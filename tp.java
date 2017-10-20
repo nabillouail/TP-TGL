@@ -9,7 +9,7 @@ public class VectorHelper {
 
 	 public  void triBulle(int tableau[]) {
 			int longueur = tableau.length;
-			int tampon = 0;
+			int tampon = 3;
 			boolean permut;
 	 
 			do {
